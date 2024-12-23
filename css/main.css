@@ -1,0 +1,308 @@
+@charset "utf-8";
+
+.inner{width: 1560px; margin: 0 auto;}
+
+/*main*/
+#main{position: relative;}
+#main .inner img{display: block; position: absolute; top: 130px; right: 180px; width: 25%;}
+#main .inner h1{font-size: 52px;}
+#main .inner strong{display: block; font-size: 120px; color: #F6C0C9;}
+#main .inner .box1{background-color: #EE556F; width: 320px; height: 55px; position: absolute; top: 590px; left: 180px; z-index: -1;}
+#main .inner p{position: absolute; bottom: 200px; right: 180px; font-size: 25px; font-weight: bold;}
+
+
+/*#about*/
+#about .bgpink{background-color: #F6C0C9; height: 953px; width: 750px; position: absolute; top: 0; left: 0; z-index: -1;}
+#about .inner{display: flex; justify-content: space-between;}
+#about.active .inner .left{animation: left 1s 0.5s backwards;}
+#about .inner .box{width: 58%;}
+#about.active .inner .box{animation: op 1s 0.5s backwards;}
+#about .inner h1{font-size: 50px; color: #fff;}
+#about .inner h1 span{font-size: 65px; color: #333;}
+#about .inner .img{width: 450px; height: 280px; background-color: #b1b1b1; margin: 60px 0;}
+#about .inner .info li{display: flex;}
+#about .inner .info li img{display: block;}
+#about .inner .info li p{margin: 5px 0 0 10px; font-weight: 500;}
+
+#about .inner .history{display: flex; justify-content: space-between; padding-bottom: 60px;}
+#about .inner .history h2{padding-bottom: 25px; font-size: 25px; color: #EE556F;}
+#about .inner .history ul li{padding-bottom: 20px; font-size: 18px;}
+#about .inner .history ul li span{display: inline-block; margin-right: 20px;}
+
+
+#about .inner .skill .skillbox{display: flex; justify-content: space-between;}
+#about .inner .skill .skillbox ul:last-child{margin-right: 35px;}
+#about .inner .skill h2{padding-bottom: 25px; font-size: 25px; color: #EE556F;}
+#about .inner .skill li p{font-size: 20px; font-weight: 500;}
+
+.progress-area{width:290px; height:12px; background:#e1e1e1; margin:10px 0 30px 0; position:relative; border-radius: 5px;}
+.progress{position:absolute; width:100%; height:100%; left:0; top:0; border-radius: 5px;}
+#about.active .progress.on-1{background:#EE556F; animation:progress1 1s linear forwards;}
+#about.active .progress.on-2{background:#EE556F; animation:progress2 1s linear forwards;}
+#about.active .progress.on-3{background:#EE556F; animation:progress3 1s linear forwards;}
+#about.active .progress.on-4{background:#EE556F; animation:progress4 1s linear forwards;}
+#about.active .progress.on-5{background:#EE556F; animation:progress5 1s linear forwards;}
+#about.active .progress.on-6{background:#EE556F; animation:progress6 1s linear forwards;}
+#about.active .progress.on-7{background:#EE556F; animation:progress7 1s linear forwards;}
+#about.active .progress.on-8{background:#EE556F; animation:progress8 1s linear forwards;}
+#about.active .progress.on-9{background:#EE556F; animation:progress9 1s linear forwards;}
+
+
+
+@keyframes progress1{
+  from{
+    width:0;
+  }to{
+    width:95%;
+  }
+}
+@keyframes progress2{
+  from{
+    width:0;
+  }to{
+    width:85%;
+  }
+}
+@keyframes progress3{
+  from{
+    width:0;
+  }to{
+    width:75%;
+  }
+}
+@keyframes progress4{
+  from{
+    width:0;
+  }to{
+    width:65%;
+  }
+}
+@keyframes progress5{
+  from{
+    width:0;
+  }to{
+    width:60%;
+  }
+}
+@keyframes progress6{
+  from{
+    width:0;
+  }to{
+    width:90%;
+  }
+}
+@keyframes progress7{
+  from{
+    width:0;
+  }to{
+    width:85%;
+  }
+}
+@keyframes progress8{
+  from{
+    width:0;
+  }to{
+    width:80%;
+  }
+}
+@keyframes progress9{
+  from{
+    width:0;
+  }to{
+    width:80%;
+  }
+}
+
+
+#contents.active h1{animation: left 1s 0.5s backwards;}
+#contents.active .tab-btn{animation: left 1s 0.5s backwards;}
+#contents{position: relative;}
+#contents .boxwrap{display: flex;}
+#contents .box1{position: absolute; top: 0; right: 0; width: 600px; height: 700px; background-color: #F6C0C9;}
+
+#contents .inner h1{position: absolute; top: 90px; left: 180px; font-size: 55px; color: #EE556F;}
+#contents .tab-btn{position: absolute; top: 180px; left: 250px;}
+#contents .tab-cont{position: absolute; top: 150px; right: 350px;}
+#contents.active .tab-cont{animation: op 1s 0.5s backwards;}
+#contents .tab-btn ul{padding: 20px 0; font-size: 2rem; cursor: pointer; white-space: nowrap;}
+#contents .tab-btn ul li.active{opacity: 1; color: #EE556F;}
+#contents .tab-btn ul li{padding: 0 0 15px 0; opacity: 0.3; display: flex; transition: all 0.5s;}
+#contents .tab-btn ul li h2{font-size: 73px;}
+#contents .tab-btn ul li div{margin: 25px 0 0 20px;}
+#contents .tab-btn ul li div span{color: #333; font-size: 20px; margin-left: 10px;}
+#contents .tab-btn ul li div p{color: #333;}
+
+#contents .tab-cont li{height: 450px;}
+#contents .tab-cont li img{display: block; width: 500px; height: 700px; border-radius: 30px; box-shadow: 5px 5px 15px rgba(0,0,0,0.2);}
+
+
+
+
+/*공통*/
+.inner .box3 span{display: inline-block;}
+.inner .box3 strong{display: inline-block;}
+.inner .box3 h1.notice{font-size: 50px; color: #EE556F;}
+.inner .box3 span.bold{font-size: 28px; color: #333;}
+.inner .box3 span.gray{font-size: 20px; color: #636363; font-weight: 500;}
+.inner .box3 h1 span{margin-left: 10px;}
+
+.inner .box3 dl{margin-top: 40px;}
+.inner .box3 dl dt{font-size: 25px; font-weight: bold; margin-bottom: 15px;}
+.inner .box3 dl dd{font-size: 18px; margin-bottom: 40px;}
+.inner .box3 dl dd strong{font-size: 55px; color: #EE556F;}
+.inner .box3 dl dd span.pink{font-size: 25px; color: #EE556F; font-weight: bold; margin: 0 15px 0 5px;}
+
+.inner .box3 dl dd ul.skill{display: flex; gap: 10px;}
+.inner .box3 dl dd ul.link{display: flex; gap: 15px;}
+.inner .box3 dl dd ul.link a{display: block; width: 214px; height: 63px; border: 1px solid #EE556F; text-align: center; line-height: 63px; font-size: 20px; color: #EE556F; font-weight: bold; border-radius: 10px; box-shadow: 2px 2px 3px rgba(0,0,0,0.2); transition: all 0.5s;}
+.inner .box3 dl dd ul.link a:hover{color: #fff; background-color: #EE556F;}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span{background-color: #000;}
+#fp-nav ul li .fp-tooltip{color: #EE556F; font-weight: bold;}
+
+@keyframes left{
+  0%{transform: translateX(-30px); opacity: 0;}
+  100%{transform: translateX(0); opacity: 1;}
+}
+@keyframes right{
+  0%{transform: translateX(30px); opacity: 0;}
+  100%{transform: translateX(0); opacity: 1;}
+}
+
+@keyframes leftbg {
+  0% {
+    background-position: 0 0; opacity: 0;
+  }
+  100% {
+    background-position: 180px 0; opacity: 1;
+  }
+}
+@keyframes rightbg {
+  0% {
+    background-position: 100% 0; opacity: 0;
+  }
+  100% {
+    background-position: calc(100% - 180px) 0; opacity: 1;
+  }
+}
+
+@keyframes op{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes textmove {
+  0%{transform: translateY(50px); opacity: 0;}
+  100%{transform: translateY(0); opacity: 1;}
+  
+}
+/*redesign*/
+
+#redesign.active .inner .box3{animation: right 1s 0.5s backwards;}
+#redesign.active{position: relative; background: url(../img/redesign.png) no-repeat 180px 0 / contain; animation: leftbg 1s 0.5s backwards;}
+#redesign .box1{background-color: #F6C0C9; width: 70px; height: 344px; border-radius: 0 0 30px 0; position: absolute; top: 0; left: 0;}
+#redesign .box2{background-color: #F6C0C9; width: 70px; height: 344px; border-radius: 30px 0 0 0; position: absolute; bottom: 0; right: 0;}
+#redesign .inner .box3{position: absolute; top: 90px; right: 180px; width: 30%;}
+
+/*branding*/
+#branding.active .inner .box3{animation: left 1s 0.5s backwards;}
+#branding.active{position: relative; background: url(../img/branding.png) no-repeat right 180px top / contain; animation: rightbg 1s 0.5s backwards;}
+#branding .box1{background-color: #F6C0C9; width: 35px; height: 105px; border-radius: 0 30px 30px 0; position: absolute; top: 90px; left: 0;}
+#branding .inner .box3{position: absolute; top: 90px; left: 180px; width: 30%;}
+#branding .inner .box3 dl dd p{margin-bottom: 10px; font-weight: 500;}
+#branding .inner .box3 dl dd p span.point{color: #EE556F;}
+
+/*responsive*/
+#responsive.active .inner .box3{animation: left 1s 0.5s backwards;}
+#responsive.active{position: relative; background: url(../img/responsive.png) no-repeat right 180px top / contain; animation: rightbg 1s 0.5s backwards;}
+#responsive .box1{background-color: #F6C0C9; width: 35px; height: 105px; border-radius: 0 30px 30px 0; position: absolute; top: 90px; left: 0;}
+#responsive .inner .box3{position: absolute; top: 90px; left: 180px; width: 30%;}
+
+/*appdesign*/
+#appdesign.active .inner .box3{animation: left 1s 0.5s backwards;}
+#appdesign.active{position: relative; background: url(../img/appdesign.png) no-repeat right 180px top / contain; animation: rightbg 1s 0.5s backwards;}
+#appdesign .box1{background-color: #F6C0C9; width: 35px; height: 105px; border-radius: 0 30px 30px 0; position: absolute; top: 90px; left: 0;}
+#appdesign .inner .box3{position: absolute; top: 90px; left: 180px; width: 30%;}
+
+/*graphic*/
+#graphic.active .inner .box3{animation: left 1s 0.5s backwards;}
+#graphic{position: relative;}
+#graphic .box1{background-color: #F6C0C9; width: 35px; height: 105px; border-radius: 0 30px 30px 0; position: absolute; top: 90px; left: 0;}
+#graphic .inner .box3{position: absolute; top: 90px; left: 180px; width: 30%;}
+#graphic .inner .box4{display: flex; justify-content: space-between; margin-top: 190px;}
+#graphic.active .inner .box4 .tab_btn{animation: left 1s 0.5s backwards;}
+#graphic .inner .box4 .tab_btn li{position: relative;}
+#graphic .inner .box4 .tab_btn li img{display: block; width: 100%; height: 280px; border-radius: 30px; box-shadow: 5px 5px 15px rgba(0,0,0,0.2); margin-bottom: 20px;}
+
+#graphic .inner .box4 .tab_btn li:nth-child(1) span::before{content: "카드 디자인 보기"; color: #fff; text-align: center; line-height: 280px;display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); position: absolute; top: 0; left: 0; border-radius: 30px; opacity: 1; transition: all 0.5s; cursor: pointer;}
+#graphic .inner .box4 .tab_btn li:nth-child(2) span::before{content: "프로젝트 내용 보기"; color: #fff; text-align: center; line-height: 280px;display: block; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); position: absolute; top: 0; left: 0; border-radius: 30px; opacity: 1; transition: all 0.5s; cursor: pointer;}
+
+#graphic .inner .box4 .tab_btn li:hover span::before{opacity: 0;}
+
+#graphic .inner .box4 .txtbox{width: 860px; height: 580px; border-radius: 30px; box-shadow: 5px 5px 15px rgba(0,0,0,0.2); position: relative;}
+#graphic .inner .box4 .txtbox dl{position: absolute; top: 30px; left: 50px;}
+
+#graphic .inner .box4 .txtbox dl dt{font-size: 25px; font-weight: bold; margin-bottom: 15px;}
+#graphic .inner .box4 .txtbox dl dd{font-size: 18px; margin-bottom: 40px;}
+#graphic .inner .box4 .txtbox dl dd strong{font-size: 55px; color: #EE556F;}
+#graphic .inner .box4 .txtbox dl dd span.pink{font-size: 25px; color: #EE556F; font-weight: bold; margin: 0 15px 0 5px;}
+#graphic .inner .box4 .txtbox dl .view{width: 700px;}
+#graphic .inner .box4 dl dd ul.skill{display: flex; gap: 10px;}
+
+
+#graphic .inner .box4 .tab_con .cardlist ul{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#graphic .inner .box4 .tab_con img{display: block;}
+#graphic .inner .box4 .tab_con .cardlist .txt{margin-left: 100px;}
+#graphic .inner .box4 .tab_con .cardlist .txt h3{margin-bottom: 30px; color: #EE556F;}
+
+.swiper-pagination-bullet{background-color: #EE556F;}
+.swiper {
+  margin: 50px;
+  width: 100%;
+  max-width: 800px; /* 슬라이더 최대 너비 */
+  height: 450px; /* 슬라이더 높이 */
+  background: rgba(255, 255, 255, 0.2); /* 투명 배경 (흰색, 투명도 20%) */
+  margin: 50px auto;
+}
+.swiper-slide {
+  background: transparent; /* 슬라이드 배경을 완전히 투명하게 설정 */
+
+  display: flex; /* 슬라이드 내부를 Flexbox로 설정 */
+  justify-content: center; /* 가로 방향 중앙 정렬 */
+  align-items: center; /* 세로 방향 중앙 정렬 */
+}
+.swiper-slide img {
+  max-width: 100%; /* 이미지를 슬라이드 너비에 맞춤 */
+  max-height: 100%; /* 이미지를 슬라이드 높이에 맞춤 */
+  object-fit: contain; /* 비율을 유지하며 컨테이너에 맞춤 */
+  display: block;
+}
+
+
+/*cafe*/
+#cafe.active .inner .box3{animation: left 1s 0.5s backwards;}
+#cafe.active{position: relative; background: url(../img/cafe24.png) no-repeat right 180px top / contain; animation: rightbg 1s 0.5s backwards;}
+#cafe .box1{background-color: #F6C0C9; width: 35px; height: 105px; border-radius: 0 30px 30px 0; position: absolute; top: 90px; left: 0;}
+#cafe .inner .box3{position: absolute; top: 90px; left: 180px; width: 30%;}
+
+/*footer*/
+#footer{position: relative; background: url(../img/start.png) no-repeat right 180px top 100px / 20%}
+#footer .box1{width: 100%; height: 60px; background-color: #F6C0C9; border-radius: 0 0 30px 30px; position: absolute; top: 0;}
+#footer .box2{width: 100%; height: 200px; background-color: #F6C0C9; border-radius: 30px 30px 0 0; position: absolute; bottom: 0;}
+
+#footer .inner h1{width: 100%; text-align: center; font-size: 55px; position: absolute; bottom: 400px; left: 0;}
+#footer.active .inner h1{animation: textmove 2s 0.5s backwards;}
+#footer .inner h1 span{color: #EE556F; display: inline-block;}
+#footer .inner h1 strong{color: #EE556F; display: inline-block;}
+
+#footer .inner img{display: block;}
+#footer .inner img.left{position: absolute; top: 350px; left: 450px;}
+#footer .inner img.right{position: absolute; top: 550px; right: 430px;}
+
+#footer .inner ul{position: absolute; bottom: 140px; left: 50%; transform: translateX(-50%); display: flex; gap: 200px;}
+#footer .inner ul li{display: flex;}
+#footer .inner ul li img{display: block;}
+#footer .inner ul li p{margin: 7px 0 0 10px; font-weight: 600; font-size: 20px;}
+#footer .inner > p{position: absolute; bottom: 20px; right: 180px; color: #fff; font-size: 20px;}
+
+
